@@ -1,3 +1,11 @@
+.container{
+    display: grid;
+    grid-gap: 20px; /*espaçamento entre as grids*/
+    /*grid-template-columns: 200px 200px 300px */ /*define quantas colunas e quanto é o tamanho de cada uma*/
+    /*grid-template-columns: 25% 25% 50% */ /*o mesmo acima mas em %*/
+    grid-template-columns: 1fr 1fr 2fr 3fr  /*o mesmo acima mas em frações. Cada número é representado pela proporção*/
+}
+
 .zone {
     cursor:pointer;
     display:inline-block;
