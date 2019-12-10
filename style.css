@@ -3,7 +3,11 @@
     grid-gap: 20px; /*espaçamento entre as grids*/
     /*grid-template-columns: 200px 200px 300px */ /*define quantas colunas e quanto é o tamanho de cada uma*/
     /*grid-template-columns: 25% 25% 50% */ /*o mesmo acima mas em %*/
-    grid-template-columns: 1fr 1fr 2fr 3fr  /*o mesmo acima mas em frações. Cada número é representado pela proporção*/
+    /*grid-template-columns: 1fr 1fr 2fr 3fr;*/  /*o mesmo acima mas em frações. Cada número é representado pela proporção*/
+   /* grid-template-columns: repeat(auto-fill, 200px); *//*responsivo mantendo as colunas com 200px*/
+   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /*mínimo de 200x e máximo de uma fração*/
+    justify-items: end; /*strech e start*/ /*horizontal*/
+    align-items: end; /*strech e start*/ /*vertical*/
 }
 
 .zone {
